@@ -1,0 +1,135 @@
+.filter-tab {
+    padding: 10px 20px;
+    background-color: var(--secondary-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    color: var(--secondary-text-color);
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+
+.filter-tab.active,
+.filter-tab:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.filter-tab.active {
+    font-weight: bold;
+}
+
+/* Course Card */
+.course-card {
+    border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.course-card:hover {
+    transform: translateY(0px);
+    box-shadow: 0 8px 20px rgba(229, 9, 20, 0.3);
+}
+
+.course-card .course-thumb {
+    object-fit: cover;
+}
+
+/* Course Stats */
+.course-stats {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 0;
+    border: 1px solid rgba(255, 0, 0, 0.1);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--main-text-color);
+    display: block;
+}
+
+.stat-label {
+    display: inline-flex;
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    margin-top: 2px;
+}
+
+/* Course Rating */
+.course-level {
+    padding: 6px 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--border-radius);
+    display: inline-block;
+}
+
+/* Growth Indicator */
+.growth-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: rgba(40, 167, 69, 0.2);
+    color: #28a745;
+}
+
+/* Course Footer */
+.course-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .course-card {
+        padding: 15px;
+    }
+
+    .course-stats {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .stat {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .filter-tabs {
+        justify-content: center;
+    }
+
+    .completion {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-content {
+        padding: 15px;
+    }
+
+    .course-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

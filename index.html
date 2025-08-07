@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/SceneLab.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <title>SceneLab</title>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <div class="image-bg">
+        <div class="overlay"></div>
+        <div class="header" id="header">
+            <div class="container">
+                <a href="#" class="logo"><span>Scene</span>Lab</a>
+
+                <!-- Desktop Navigation -->
+                <ul class="main-nav">
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li>
+                        <a href="">Other link</a>
+                        <!-- Start Megamenu -->
+                        <div class="mega-menu">
+                            <div class="image">
+                                <img decoding="async"
+                                    src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=400&fit=crop"
+                                    alt="" loading="lazy">
+                            </div>
+                            <ul class="links">
+                                <li>
+                                    <a href="#testimonials"><i class="far fa-comments fa-fw"></i> Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="#features"><i class="far fa-check-circle fa-fw"></i> Features</a>
+                                </li>
+                                <li>
+                                    <a href="#cta"><i class="far fa-building fa-fw"></i> Call To Action</a>
+                                </li>
+                                <li>
+                                    <a href="#how-it-course"><i class="far fa-clipboard fa-fw"></i> How It Works</a>
+                                </li>
+                                <li>
+                                    <a href="#team"><i class="far fa-user fa-fw"></i> Team Members</a>
+                                </li>
+                            </ul>
+                            <ul class="links">
+                                <li>
+                                    <a href="#stats"><i class="far fa-chart-bar fa-fw"></i> Stats</a>
+                                </li>
+                                <li>
+                                    <a href="#pricing"><i class="fas fa-server fa-fw"></i> Pricing Plans</a>
+                                </li>
+                                <li>
+                                    <a href="#top-video"><i class="far fa-play-circle fa-fw"></i> Top Videos</a>
+                                </li>
+                                <li>
+                                    <a href="#discount"><i class="fas fa-percent fa-fw"></i> Request A Discount</a>
+                                </li>
+                                <li>
+                                    <a href="#Contact-Info"><i class="fas fa-address-card fa-fw"></i> Contact Info</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Megamenu -->
+                    </li>
+                </ul>
+
+                <!-- Desktop User Avatar -->
+                <div class="avatar">
+                    <div class="avatar-wrapper">
+                        <div class="image">
+                            <img decoding="async" src="images/user.png" alt="" loading="lazy">
+                        </div>
+                        <div class="menu">
+                            <ul class="links">
+                                <li><a href="dashboard-admin.html"><i class="fas fa-columns"></i> Dashboard</a></li>
+                                <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Hamburger Menu -->
+                <div class="hamburger" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <div class="mobile-header">
+                <a href="#" class="logo"><span>Scene</span>Lab</a>
+                <div class="close-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <ul class="mobile-links">
+                <li><a href="#courses"><i class="fas fa-graduation-cap"></i>Courses</a></li>
+                <li><a href="#gallery"><i class="fas fa-images"></i>Gallery</a></li>
+                <li><a href="#services"><i class="fas fa-cogs"></i>Our Services</a></li>
+            </ul>
+
+            <div class="mobile-mega-menu">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#testimonials"><i class="far fa-comments"></i>Testimonials</a></li>
+                    <li><a href="#features"><i class="far fa-check-circle"></i>Features</a></li>
+                    <li><a href="#cta"><i class="far fa-building"></i>Call To Action</a></li>
+                    <li><a href="#how-it-course"><i class="far fa-clipboard"></i>How It Works</a></li>
+                    <li><a href="#team"><i class="far fa-user"></i>Team Members</a></li>
+                </ul>
+
+                <h4>More Options</h4>
+                <ul>
+                    <li><a href="#stats"><i class="far fa-chart-bar"></i>Stats</a></li>
+                    <li><a href="#pricing"><i class="fas fa-server"></i>Pricing Plans</a></li>
+                    <li><a href="#top-video"><i class="far fa-play-circle"></i>Top Videos</a></li>
+                    <li><a href="#discount"><i class="fas fa-percent"></i>Request A Discount</a></li>
+                    <li><a href="#Contact-Info"><i class="fas fa-address-card"></i>Contact Info</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-user">
+                <div class="user-avatar">
+                    <img src="images/user.png" alt="User Avatar">
+                </div>
+                <div class="user-links">
+                    <a href="dashboard-admin.html">
+                        <i class="fas fa-columns"></i>Dashboard
+                    </a>
+                    <a href="logout.html">
+                        <i class="fas fa-sign-out-alt"></i>Log Out
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#header" class="back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <!-- End Header -->
+        <!-- Start Landing -->
+        <div class="landing">
+            <div class="container">
+                <div class="landing-text">
+                    <h1>Master the Art of <span class="red-title">Filmmaking</span></h1>
+                    <p>Join SceneLab and learn video editing, color grading, and cinematic storytelling — all in one
+                        platform.
+                    </p>
+                    <a href="login.html" class="btn-red-outline">Join now</a>
+                </div>
+            </div>
+        </div>
+        <a href="#courses" class="go-down"><i class="fas fa-angle-double-down fa-2x"></i></a>
+    </div>
+    <!-- End Landing -->
+    <!-- Start Courses -->
+    <div class="courses" id="courses">
+        <h2 class="main-title">Our Popular Courses</h2>
+        <div class="container">
+            <div class="box">
+                <img src="images/courses/Color-Grading.jpg" alt="" loading="lazy">
+                <div class="content">
+                    <h3>Color Grading Masterclass</h3>
+                    <p>Learn to transform ordinary footage into cinematic masterpieces using DaVinci Resolve and
+                        advanced color theory.</p>
+                </div>
+                <div class="info">
+                    <a href="javascript:void(0);">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/courses/montage.jpg" alt="" loading="lazy">
+                <div class="content">
+                    <h3> Advanced Video Editing with Premiere Pro</h3>
+                    <p>Take your editing to the next level with dynamic transitions, motion cuts, and storytelling
+                        techniques.</p>
+                </div>
+                <div class="info">
+                    <a href="javascript:void(0);">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/courses/shot.jpg" alt="" loading="lazy">
+                <div class="content">
+                    <h3>Storytelling for Creators</h3>
+                    <p>Discover the secrets of visual storytelling and learn how to craft emotional narratives that
+                        captivate your</p>
+                </div>
+                <div class="info">
+                    <a href="javascript:void(0);">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/courses/photographer.jpg" alt="" loading="lazy">
+                <div class="content">
+                    <h3>Filmmaking Essentials: Camera, Light & Action</h3>
+                    <p>Learn the fundamentals of shooting, lighting, and directing professional video scenes like a
+                        filmmaker.</p>
+                </div>
+                <div class="info">
+                    <a href="javascript:void(0);">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/courses/after-effects.png" alt="" loading="lazy">
+                <div class="content">
+                    <h3> Motion Graphics with After Effects</h3>
+                    <p>Animate your ideas using After Effects — from kinetic typography to smooth logo reveals and UI
+                    </p>
+                </div>
+                <div class="info">
+                    <a href="javascript:void(0);">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/courses/audio.jpg" alt="" loading="lazy">
+                <div class="content">
+                    <h3>Sound Design & Audio Editing</h3>
+                    <p>Master sound effects, ambient audio, and clean dialogue mixing for immersive video production.
+                    </p>
+                </div>
+                <div class="info">
+                    <a href="javascript:void(0);">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/courses/content-creator.jpg" alt="" loading="lazy">
+                <div class="content">
+                    <h3>YouTube Content Creation</h3>
+                    <p>Learn how to film, edit, brand, and grow a successful YouTube channel from scratch.</p>
+                </div>
+                <div class="info">
+                    <a href="javascript:void(0);">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/courses/cinematic-light.jpg" alt="" loading="lazy">
+                <div class="content">
+                    <h3>Lighting Techniques for Video</h3>
+                    <p>Explore professional lighting setups for interviews, product videos, and cinematic scenes.</p>
+                </div>
+                <div class="info">
+                    <a href="javascript:void(0);">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Courses -->
+    <!-- Start Gallarey section -->
+    <div class="gallery" id="gallery">
+
+        <h2 class="main-title">SceneLab in Action</h2>
+        <p class="section-intro">
+            Explore a visual journey through our studio <br>from hands-on workshops to cinematic moments captured in
+            real
+            time.
+        </p>
+
+        <div class="container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/img1.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/img2.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/img3.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/img4.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/img5.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/img6.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Gallarey section -->
+    <!-- Start Services Section -->
+    <div class="services" id="services">
+        <h2 class="main-title">Our Services</h2>
+        <div class="container">
+            <div class="service-box">
+                <i class="fas fa-scissors fa-4x"></i>
+                <h2>Video Editing</h2>
+                <p>Learn professional video editing using tools like Premiere Pro and Final Cut. Master cutting,
+                    transitions, effects, and storytelling flow.</p>
+                <div class="info">
+                    <a href="javascript:void(0);">Read more</a>
+                </div>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-palette fa-4x"></i>
+                <h2>Color Grading</h2>
+                <p>Discover the science of cinematic color grading. Work with DaVinci Resolve to enhance mood, tone, and
+                    visual storytelling.</p>
+                <div class="info">
+                    <a href="javascript:void(0);">Read more</a>
+                </div>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-bolt fa-4x"></i>
+                <h2>Motion Graphics</h2>
+                <p>Animate titles, logos, and elements using After Effects. Bring your videos to life with smooth motion
+                    and kinetic typography.</p>
+                <div class="info">
+                    <a href="javascript:void(0);">Read more</a>
+                </div>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-headphones-alt fa-4x"></i>
+                <h2>Audio Editing</h2>
+                <p>Clean, and enhance audio using modern techniques. Learn how to design soundscapes that
+                    support your visuals perfectly.</p>
+                <div class="info">
+                    <a href="javascript:void(0);">Read more</a>
+                </div>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-laptop-code fa-4x"></i>
+                <h2>Online Courses</h2>
+                <p>Access our interactive online learning platform anywhere, anytime. Structured lessons and
+                    downloadable resources included.</p>
+                <div class="info">
+                    <a href="javascript:void(0);">Read more</a>
+                </div>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-lightbulb fa-4x"></i>
+                <h2>Creative Mentorship</h2>
+                <p>Get one-on-one guidance from industry professionals to turn your creative ideas into finished visual
+                    projects.</p>
+                <div class="info">
+                    <a href="javascript:void(0);">Read more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Services Section -->
+    <!-- Start Testimonials Section -->
+    <div class="testimonials" id="testimonials">
+        <h2 class="main-title">Testimonials</h2>
+        <div class="container">
+            <div class="box">
+                <img src="images/avatar-01.png" alt="" loading="lazy">
+                <h3> Sarah Johnson</h3>
+                <span class="title"> Freelance Video Editor</span>
+                <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="empty far fa-star"></i>
+                </div>
+                <p>
+                    SceneLab helped me elevate my video editing game. The hands-on projects and real-world techniques
+                    gave me confidence to work with actual clients.
+                </p>
+            </div>
+            <div class="box">
+                <img src="images/avatar-02.png" alt="" loading="lazy">
+                <h3>Ahmed Khalil</h3>
+                <span class="title">Content Creator</span>
+                <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="empty far fa-star"></i>
+                </div>
+                <p>
+                    I’ve taken many courses online, but SceneLab stands out. Clear instruction, high-quality content,
+                    and real mentorship – it’s the full package.
+                </p>
+            </div>
+            <div class="box">
+                <img src="images/avatar-03.png" alt="" loading="lazy">
+                <h3>Emma Brooks</h3>
+                <span class="title">Film Student</span>
+                <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="empty far fa-star"></i>
+                </div>
+                <p>
+                    From storytelling to color grading, SceneLab gave me industry-ready skills. It felt like a mini film
+                    school online!.
+                </p>
+            </div>
+            <div class="box">
+                <img src="images/avatar-04.png" alt="" loading="lazy">
+                <h3>Marco Silva</h3>
+                <span class="title">Junior Motion Designer</span>
+                <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="empty far fa-star"></i>
+                </div>
+                <p>
+                    What surprised me most was the quality of feedback I received. It felt like having a personal coach
+                    throughout the course.
+                </p>
+            </div>
+            <div class="box">
+                <img src="images/avatar-05.png" alt="" loading="lazy">
+                <h3>Layla Nasr</h3>
+                <span class="title">Social Media Manager</span>
+                <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="empty far fa-star"></i>
+                    <i class="empty far fa-star"></i>
+                </div>
+                <p>
+                    Thanks to the YouTube Content Creation course, I launched a successful brand channel that now has
+                    over 50K subscribers!.
+                </p>
+            </div>
+            <div class="box">
+                <img src="images/avatar-06.png" alt="" loading="lazy">
+                <h3>David Kim</h3>
+                <span class="title">Music Producer & Editor</span>
+                <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="empty far fa-star"></i>
+                </div>
+                <p>
+                    The audio editing module was on point. I’ve incorporated their techniques
+                    into my studio workflow with excellent results.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Testimonials Section -->
+    <!-- Start Features section -->
+    <div class="features" id="features">
+        <h2 class="main-title">Features</h2>
+        <h3 class="sub-title">Why Choose Us ?</h3>
+        <div class="container">
+            <div class="box">
+                <i class="fa-solid fa-route fa-4x"></i>
+                <h3>Personalized Learning Paths</h3>
+                <p>We adapt to your creative goals. Whether you're into editing, color grading, or content creation —
+                    you'll follow a structured path that suits your skill level.</p>
+                <a href="javascript:void(0);" class="btn-red-outline">More</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-layer-group fa-4x"></i>
+                <h3>All-in-One Platform</h3>
+                <p> SceneLab combines tutorials, resources, project files, mentorship, and real-world case studies under
+                    one platform — so you never have to look elsewhere.</p>
+                <a href="javascript:void(0);" class="btn-red-outline">More</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-briefcase fa-4x"></i>
+                <h3>Real Industry Projects</h3>
+                <p>Learn by doing, not just watching.
+                    Each module includes hands-on assignments based on real scenarios from film studios, YouTube
+                    channels, and production houses.
+                </p>
+                <a href="javascript:void(0);" class="btn-red-outline">More</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Features section -->
+    <!-- Start CTA section  -->
+    <div class="cta" id="cta">
+        <div class="container">
+            <h2 class="title">Ready to Level Up Your Skills?</h2>
+            <p class="sub-title">
+                Join thousands of creators who transformed their careers with SceneLab’s hands-on learning. <br>
+                Whether you're starting or scaling — we’re here to guide you.</p>
+            <a href="#pricing" class="btn-red-outline">Start Learning Now</a>
+        </div>
+    </div>
+    <!-- End CTA section  -->
+    <!-- Start How It Works  -->
+    <div class="how-it-course" id="how-it-course">
+        <div class="dots dots-up"></div>
+        <div class="dots dots-down"></div>
+        <h2 class="main-title">How It Works ?</h2>
+        <div class="container">
+            <div class="box">
+                <i class=" fa-solid fa-book-open fa-4x"></i>
+                <span class="step">Step 1 </span>
+                <h2 class="title">Explore Courses</h2>
+                <p>
+                    Browse our diverse library of tutorials — from editing and color grading to storytelling and sound
+                    design. Choose what fits your passion.
+                </p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-play-circle fa-4x"></i>
+                <span class="step"> Step 2</span>
+                <h2 class="title">Start Learning</h2>
+                <p>
+                    Dive into interactive modules with real-world assignments. Learn by actually creating, not just
+                    watching.
+                </p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-video fa-4x"></i>
+                <span class="step">Step 3 </span>
+                <h2 class="title">Join Live Projects</h2>
+                <p>
+                    Collaborate with mentors and fellow creators in real-time projects that simulate professional film
+                    studio environments.
+                </p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-briefcase fa-4x "></i>
+                <span class="step">Step 4</span>
+                <h2 class="title">Build & Share Your Portfolio</h2>
+                <p>
+                    Showcase your work to the world. Get feedback, build your brand, and take the next step in your
+                    creative journey.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End How It Works   -->
+    <!-- Start Team Member  -->
+    <div class="team" id="team">
+        <h2 class="main-title">Meet Our Team</h2>
+        <p class="sub-title">Meet the creative minds behind SceneLab. <br>
+            Our team of passionate experts is here to guide you through every step of your creative journey.</p>
+        <div class="container">
+            <div class="box">
+                <div class="data">
+                    <img decoding="async" src="images/employee6.jpg" alt="" loading="lazy">
+                    <div class="social">
+                        <a href="javascript:void(0);" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="x-twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Adam Reynolds</h3>
+                    <p>Content & Communications Manager</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img decoding="async" src="images/employee1.jpg" alt="" loading="lazy">
+                    <div class="social">
+                        <a href="javascript:void(0);" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="x-twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Liam Carter</h3>
+                    <p>Motion Graphics Designer</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img decoding="async" src="images/employee2.jpg" alt="" loading="lazy">
+                    <div class="social">
+                        <a href="javascript:void(0);" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="x-twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Ethan Moore</h3>
+                    <p>Video Editor</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img decoding="async" src="images/employee3.jpg" alt="" loading="lazy">
+                    <div class="social">
+                        <a href="javascript:void(0);" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="x-twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Noah Bennett</h3>
+                    <p>Color Grading Specialist</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img decoding="async" src="images/employee4.jpg" alt="" loading="lazy">
+                    <div class="social">
+                        <a href="javascript:void(0);" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="x-twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Lucas White</h3>
+                    <p>Cinematographer</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img decoding="async" src="images/employee5.jpg" alt="" loading="lazy">
+                    <div class="social">
+                        <a href="javascript:void(0);" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="x-twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Mason Scott</h3>
+                    <p>Director of Photography (DOP)</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img decoding="async" src="images/employee7.jpg" alt="" loading="lazy">
+                    <div class="social">
+                        <a href="javascript:void(0);" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="x-twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Sophie Green</h3>
+                    <p>Audio Engineer</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img decoding="async" src="images/employee8.jpg" alt="" loading="lazy">
+                    <div class="social">
+                        <a href="javascript:void(0);" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="x-twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Daniel Brooks</h3>
+                    <p>Mentor & Senior Instructor</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img decoding="async" src="images/employee9.jpg" alt="" loading="lazy">
+                    <div class="social">
+                        <a href="javascript:void(0);" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="x-twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Isabella Torres</h3>
+                    <p>Creative Director & Founder</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Team Member  -->
+    <!-- Start Stats Section -->
+    <div class="stats" id="stats">
+        <div class="dots dots-up"></div>
+        <div class="dots dots-down"></div>
+        <h2 class="stats-title">Our Impact In Numbers</h2>
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-video fa-4x"></i>
+                <h3 class="number">120+</h3>
+                <span class="text">Courses</span>
+            </div>
+            <div class="box">
+                <i class="fas fa-chalkboard-teacher fa-4x"></i>
+                <h3 class="number">40+</h3>
+                <span class="text">Expert Mentors</span>
+            </div>
+            <div class="box">
+                <i class="fas fa-users fa-4x"></i>
+                <h3 class="number">15K+</h3>
+                <span class="text">Students</span>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe fa-4x "></i>
+                <h3 class="number">60+</h3>
+                <span class="text">Countries Reached</span>
+            </div>
+        </div>
+    </div>
+    <!-- End Stats Section -->
+    <!-- Start Pricing Section -->
+    <div class="pricing" id="pricing">
+        <h2 class="main-title">Pricing Plans</h2>
+        <p class="sub-title">Choose the plan that fits your creative journey best.</p>
+        <div class="container">
+            <div class="box">
+                <img src="images/hosting-basic.png" alt="" loading="lazy">
+                <div class="title">Basic</div>
+                <div class="price">
+                    <span class="price-unit">$15</span>
+                    <span class="time">Per Month</span>
+                </div>
+                <ul>
+                    <li>Access 3 core courses</li>
+                    <li> Starter color grading tools</li>
+                    <li>Sample audio assets</li>
+                    <li>One basic hands-on project</li>
+                    <li>1 practice project</li>
+                    <li>No certificate of completion</li>
+                    <li>Email support (72h)</li>
+                </ul>
+                <a href="javascript:void(0);" class="btn-red-outline">Choose Plan</a>
+            </div>
+            <div class="box popular">
+                <div class="label">Most Popular</div>
+                <img src="images/hosting-advanced.png" alt="" loading="lazy">
+                <div class="title">Advanced</div>
+                <div class="price">
+                    <span class="price-unit">$25</span>
+                    <span class="time">Per Month</span>
+                </div>
+                <ul>
+                    <li>Full access to 10+ courses</li>
+                    <li>Full LUTs & presets + Adobe presets</li>
+                    <li>Sound design lessons</li>
+                    <li>Real scene projects</li>
+                    <li>Email support (24h)</li>
+                    <li>Access to private student community</li>
+                </ul>
+                <a href="javascript:void(0);" class="btn-red-outline">Choose Plan</a>
+            </div>
+            <div class="box">
+                <img src="images/hosting-professional.png" alt="" loading="lazy">
+                <div class="title">Professional</div>
+                <div class="price">
+                    <span class="price-unit">$45</span>
+                    <span class="time">Per Month</span>
+                </div>
+                <ul>
+                    <li> Unlimited access to all courses</li>
+                    <li>Pro editing tools</li>
+                    <li>Expert feedback</li>
+                    <li>Industry-level projects</li>
+                    <li>Access to private student community</li>
+                    <li>Priority support (6h)</li>
+                </ul>
+                <a href="javascript:void(0);" class="btn-red-outline">Choose Plan</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Pricing Section-->
+    <!-- Start Top Video -->
+    <div class="top-video" id="top-video">
+        <div class="icon-background">
+            <i class="fas fa-film icon i1"></i>
+            <i class="fas fa-video icon i2"></i>
+            <i class="fas fa-clapperboard icon i3"></i>
+            <i class="fas fa-magic icon i4"></i>
+            <i class="fas fa-music icon i5"></i>
+            <i class="fas fa-bolt icon i6"></i>
+            <i class="fas fa-volume-up icon i7"></i>
+        </div>
+        <h2 class="main-title">Watch Our Work in Action</h2>
+        <p class="sub-title">Experience the quality of our editing and filmmaking classes through this showcase.</p>
+        <div class="container">
+            <div class="video-box">
+                <video src="video/academy-promo.mp4" poster="images/video-cover.png" controls></video>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Video -->
+    <!-- Start Request Discount -->
+    <div class="discount" id="discount">
+        <div class="image">
+            <div class="content">
+                <h2>🎁 Request Your Exclusive Discount!</h2>
+                <p> Register now and get up to <strong>30% OFF</strong> on your first course!<br>
+                    Invest in your skills today and start your professional journey with us.<br>
+                    <em><b>Limited time offer!</b></em>
+                </p>
+                <img src="images/discount.png" alt="" loading="lazy">
+            </div>
+        </div>
+        <div class="form">
+            <h2>Request A Discount</h2>
+            <form action="">
+                <input class="input" type="text" placeholder="Your Name" name="name" required />
+                <input class="input" type="email" placeholder="Your Email" name="email" required />
+                <input class="input" type="text" placeholder="Your Phone" name="mobile" />
+                <textarea class="input" placeholder="Tell Us About Your Needs" name="message"></textarea>
+                <input type="submit" value="Send" class="btn" />
+            </form>
+        </div>
+    </div>
+    <!-- End Request Discount -->
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-box">
+                <h3 class="logo"><span>Scene</span>Lab</h3>
+                <p class="text">
+                    Master video editing, color grading & storytelling with hands-on learning from real creators.
+                </p>
+            </div>
+            <div class="footer-box footer-links">
+                <h3>Quick Links</h3>
+                <ul class="links">
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-box" id="Contact-Info">
+                <h3>Contact Info</h3>
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">Studio 12A, 2nd Floor, Creative Tower, Downtown Dubai, UAE</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">Business Hours: Sunday – Thursday, 9:00 AM – 6:00 PM</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                        <span>+20123456789</span><br />
+                        <span>+20198765432</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Stay Connected</h3>
+                <p>Follow us on social media and never miss an update.</p>
+                <div class="social-icons">
+                    <a href="javascript:void(0);" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="javascript:void(0);" class="x-twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="javascript:void(0);" class="youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="javascript:void(0);" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 <span>SceneLab</span> . All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script>
+        // Simple toggle function for demonstration
+        // This can be replaced with CSS-only solution or enhanced JavaScript later
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileNav').classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            const mobileNav = document.getElementById('mobileNav');
+            const hamburger = document.querySelector('.hamburger');
+
+            if (!mobileNav.contains(e.target) && !hamburger.contains(e.target)) {
+                mobileNav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

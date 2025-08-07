@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings | SceneLab</title>
+    <!-- Framework Utilities -->
+    <link rel="stylesheet" href="css/framework.css" />
+    <!-- Custom Dashboard Styling -->
+    <link rel="stylesheet" href="css/dashboard-admin.css" />
+    <link rel="stylesheet" href="css/setting.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-main p-20 p-relative shadow">
+            <h2 class="text-center mb-20 mt-10 hide-mobile">🎬 <span class="text-primary">Scene</span>Lab</h2>
+            </h2>
+            <ul>
+                <li>
+                    <a href="dashboard-admin.html" class=" text-secondary p-10 transition d-flex align-center rad-6">
+                        <i class="fas fa-columns"></i> <span class="hide-mobile">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-users fa-fw"></i> <span class="hide-mobile fs-14">Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-book fa-fw"></i> <span class="hide-mobile fs-14">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="addcourse.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-plus-circle fa-fw"></i> <span class="hide-mobile fs-14">Add Course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html"
+                        class="active text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-cog fa-fw"></i> <span class="hide-mobile fs-14">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full ">
+            <!-- Start head -->
+            <div class="head bg-secondary flex-between p-15 ">
+                <div class="search p-relative">
+                    <input class="rad-10 transition" type="search" placeholder="Type A Keyword" name="search">
+                </div>
+                <div class="icon d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <div class="avatar-wrapper">
+                        <div class="image">
+                            <img decoding="async" src="images/avatar-06.png" alt="" loading="lazy">
+                        </div>
+                        <div class="menu">
+                            <ul class="links">
+                                <li><a href="index.html"><i class="fas fa-home"></i> Home</a>
+                                </li>
+                                <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End head -->
+            <h1 class="p-relative">Settings</h1>
+            <div class="wrapper d-grid gap-20 mr-20 ml-20 mb-20 ">
+
+                <!-- Profile Settings -->
+                <div class="profile-settings bg-secondary p-20 rad-10 shadow slideInUp">
+                    <h2 class="text-white mb-20">
+                        <i class="fas fa-user-cog text-primary mr-10"></i> Profile Settings
+                    </h2>
+
+                    <div class="profile-pic d-flex align-center gap-20 mb-20">
+                        <div class="profile-upload flex-center" style="background-image: url('images/avatar-06.png')">
+                            <i class="fas fa-camera text-secondary fs-20"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white mb-5">Profile Picture</h3>
+                            <p class="text-secondary fs-14 mb-10">Upload a new avatar (Max: 2MB)</p>
+                            <button class="btn-glass">Choose File</button>
+                        </div>
+                    </div>
+
+                    <div class="settings-section">
+                        <div class="d-grid grid-350 gap-20">
+                            <div>
+                                <label class="text-secondary fs-14 d-block mb-5">Full Name</label>
+                                <input type="text" class="input" value="Manager Ahmed" placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <label class="text-secondary fs-14 d-block mb-5">Email Address</label>
+                                <input type="email" class="input" value="manager@scenelab.com"
+                                    placeholder="your@email.com">
+                            </div>
+                            <div>
+                                <label class="text-secondary fs-14 d-block mb-5">Job Title</label>
+                                <input type="text" class="input" value="Creative Director" placeholder="Your job title">
+                            </div>
+                            <div>
+                                <label class="text-secondary fs-14 d-block mb-5">Phone Number</label>
+                                <input type="tel" class="input" value="+1 234 567 890" placeholder="Phone number">
+                            </div>
+                        </div>
+
+                        <div class="mt-20">
+                            <label class="text-secondary fs-14 d-block mb-5">Bio</label>
+                            <textarea class="textarea"
+                                placeholder="Tell us about yourself...">Passionate creative director with 8+ years of experience in motion graphics and video editing. Leading SceneLab's creative vision.</textarea>
+                        </div>
+
+                        <div class="mt-20">
+                            <button class="btn-glass mr-10">Save Changes</button>
+                            <button class="btn-danger">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Settings -->
+                <div class="security-settings bg-secondary p-20 rad-10 shadow slideInUp">
+                    <h2 class="text-white mb-20">
+                        <i class="fas fa-shield-alt text-primary mr-10"></i> Security
+                    </h2>
+
+                    <div class="setting-item flex-between">
+                        <div>
+                            <h3 class="text-white fs-16 mb-5">Two-Factor Authentication</h3>
+                            <p class="text-secondary fs-14">Add an extra layer of security to your account</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3 class="text-white fs-16 mb-10">Change Password</h3>
+                        <div class="d-grid grid-300 gap-15">
+                            <input type="password" class="input" placeholder="Current Password">
+                            <input type="password" class="input" placeholder="New Password">
+                            <input type="password" class="input" placeholder="Confirm Password">
+                        </div>
+                        <button class="btn-glass mt-15">Update Password</button>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3 class="text-white fs-16 mb-10">Active Sessions</h3>
+                        <div class="bg-main p-15 rad-6 mb-10">
+                            <div class="flex-between align-center">
+                                <div>
+                                    <p class="text-white fw-bold mb-5">Chrome on Windows</p>
+                                    <p class="text-secondary fs-13">Current session • NewYork, America</p>
+                                </div>
+                                <span class="text-success fs-13">Active Now</span>
+                            </div>
+                        </div>
+                        <div class="bg-main p-15 rad-6">
+                            <div class="flex-between align-center">
+                                <div>
+                                    <p class="text-white fw-bold mb-5">Safari on iPhone</p>
+                                    <p class="text-secondary fs-13">2 hours ago • NewYork, America</p>
+                                </div>
+                                <button class="btn-danger fs-13">Revoke</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notification Settings -->
+                <div class="notification-settings bg-secondary p-20 rad-10 shadow slideInUp">
+                    <h2 class="text-white mb-20">
+                        <i class="fas fa-bell text-primary mr-10"></i> Notifications
+                    </h2>
+
+                    <div class="notification-item flex-between">
+                        <div>
+                            <h3 class="text-white fs-16 mb-5">Email Notifications</h3>
+                            <p class="text-secondary fs-14">Receive updates via email</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="notification-item flex-between">
+                        <div>
+                            <h3 class="text-white fs-16 mb-5">Push Notifications</h3>
+                            <p class="text-secondary fs-14">Browser push notifications</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="notification-item flex-between">
+                        <div>
+                            <h3 class="text-white fs-16 mb-5">Course Updates</h3>
+                            <p class="text-secondary fs-14">New courses and content alerts</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="notification-item flex-between">
+                        <div>
+                            <h3 class="text-white fs-16 mb-5">Weekly Reports</h3>
+                            <p class="text-secondary fs-14">Analytics and performance summaries</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Theme Customization -->
+                <div class="theme-settings bg-secondary p-20 rad-10 shadow slideInUp">
+                    <h2 class="text-white mb-20">
+                        <i class="fas fa-palette text-primary mr-10"></i> Theme & Appearance
+                    </h2>
+
+                    <div class="setting-item">
+                        <h3 class="text-white fs-16 mb-15">Accent Color</h3>
+                        <div class="d-flex gap-15">
+                            <label class="color-picker" style="background-color: #E50914">
+                                <input type="radio" name="accent-color" checked>
+                                <span class="color-picker-inner"></span>
+                            </label>
+                            <label class="color-picker" style="background-color: #00D4AA">
+                                <input type="radio" name="accent-color">
+                                <span class="color-picker-inner"></span>
+                            </label>
+                            <label class="color-picker" style="background-color: #FF6B6B">
+                                <input type="radio" name="accent-color">
+                                <span class="color-picker-inner"></span>
+                            </label>
+                            <label class="color-picker" style="background-color: #4ECDC4">
+                                <input type="radio" name="accent-color">
+                                <span class="color-picker-inner"></span>
+                            </label>
+                            <label class="color-picker" style="background-color: #45B7D1">
+                                <input type="radio" name="accent-color">
+                                <span class="color-picker-inner"></span>
+                            </label>
+                            <label class="color-picker" style="background-color: #96CEB4">
+                                <input type="radio" name="accent-color">
+                                <span class="color-picker-inner"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="setting-item flex-between">
+                        <div>
+                            <h3 class="text-white fs-16 mb-5">Dark Mode</h3>
+                            <p class="text-secondary fs-14">Switch between light and dark themes</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item flex-between">
+                        <div>
+                            <h3 class="text-white fs-16 mb-5">Compact Layout</h3>
+                            <p class="text-secondary fs-14">Reduce spacing for more content</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item flex-between">
+                        <div>
+                            <h3 class="text-white fs-16 mb-5">Animations</h3>
+                            <p class="text-secondary fs-14">Enable smooth transitions and effects</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- System Settings -->
+                <div class="system-settings bg-secondary p-20 rad-10 shadow slideInUp">
+                    <h2 class="text-white mb-20">
+                        <i class="fas fa-cogs text-primary mr-10"></i> System Preferences
+                    </h2>
+
+                    <div class="setting-item">
+                        <h3 class="text-white fs-16 mb-10">Language & Region</h3>
+                        <div class="d-grid grid-450 gap-15">
+                            <select class="input">
+                                <option>English (US)</option>
+                                <option>العربية</option>
+                                <option>Español</option>
+                                <option>Français</option>
+                            </select>
+                            <select class="input">
+                                <option>Israel (UTC+3)</option>
+                                <option>United States (UTC-5)</option>
+                                <option>United Kingdom (UTC+0)</option>
+                                <option>Germany (UTC+1)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3 class="text-white fs-16 mb-10">Storage Usage</h3>
+                        <div class="mb-15">
+                            <div class="flex-between mb-5">
+                                <span class="text-secondary fs-14">Used: 24.5 GB of 50 GB</span>
+                                <span class="text-white fs-14">49% Full</span>
+                            </div>
+                            <div class="storage-bar">
+                                <div class="storage-used" style="width: 49%"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-10">
+                            <button class="btn-glass">Manage Files</button>
+                            <button class="btn-glass">Upgrade Storage</button>
+                        </div>
+                    </div>
+
+                    <div class="setting-item flex-between">
+                        <div>
+                            <h3 class="text-white fs-16 mb-5">Auto-Save</h3>
+                            <p class="text-secondary fs-14">Automatically save your work every 5 minutes</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Danger Zone -->
+                <div class="danger-zone bg-secondary p-20 rad-10 shadow slideInUp">
+                    <h2 class="text-white mb-20">
+                        <i class="fas fa-exclamation-triangle text-primary mr-10"></i> Danger Zone
+                    </h2>
+
+                    <div class="setting-item">
+                        <h3 class="text-white fs-16 mb-5">Export Data</h3>
+                        <p class="text-secondary fs-14 mb-15">Download a copy of all your data including courses,
+                            projects, and settings</p>
+                        <button class="btn-glass">Export Data</button>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3 class="text-white fs-16 mb-5">Deactivate Account</h3>
+                        <p class="text-secondary fs-14 mb-15">Temporarily disable your account. You can reactivate it
+                            anytime.</p>
+                        <button class="btn-danger">Deactivate Account</button>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3 class="text-white fs-16 mb-5">Delete Account</h3>
+                        <p class="text-secondary fs-14 mb-15">Permanently delete your account and all associated data.
+                            This action cannot be undone.</p>
+                        <button class="btn-danger">Delete Account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | SceneLab</title>
+    <link rel="stylesheet" href="css/SceneLab.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="register-box">
+        <h2>Create Your <span>SceneLab</span> Account</h2>
+
+        <form action="#" method="post">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="password" placeholder="Password" required />
+            <input type="password" placeholder="Confirm Password" required />
+
+            <select name="role" required>
+                <option value="" disabled selected>Select Role</option>
+                <option value="student">Student</option>
+                <option value="instructor">Instructor</option>
+            </select>
+
+            <button type="submit" class="btn-red-outline">Register</button>
+        </form>
+
+        <div class="divider">OR</div>
+
+        <button class="google-btn">
+            <img src="images/google-icon.png" alt="Google Icon" />
+            <span>Continue with Google</span>
+        </button>
+
+        <div class="links">
+            <span>Already have an account?</span>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

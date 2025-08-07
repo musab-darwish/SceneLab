@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users | SceneLab</title>
+    <!-- Framework Utilities -->
+    <link rel="stylesheet" href="css/framework.css" />
+    <!-- Custom Dashboard Styling -->
+    <link rel="stylesheet" href="css/dashboard-admin.css" />
+    <link rel="stylesheet" href="css/users.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-main p-20 p-relative shadow">
+            <h2 class="text-center mb-20 mt-10 hide-mobile">🎬 <span class="text-primary">Scene</span>Lab</h2>
+            <ul>
+                <li>
+                    <a href="dashboard-admin.html" class=" text-secondary p-10 transition d-flex align-center rad-6">
+                        <i class="fas fa-columns"></i> <span class="hide-mobile">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html"
+                        class="active text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-users fa-fw"></i> <span class="hide-mobile fs-14">Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-book fa-fw"></i> <span class="hide-mobile fs-14">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="addcourse.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-plus-circle fa-fw"></i> <span class="hide-mobile fs-14">Add Course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-cog fa-fw"></i> <span class="hide-mobile fs-14">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full ">
+            <!-- Start head -->
+            <div class="head bg-secondary flex-between p-15 ">
+                <div class="search p-relative">
+                    <input class="rad-10 transition" type="search" placeholder="Type A Keyword" name="search">
+                </div>
+                <div class="icon d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <div class="avatar-wrapper">
+                        <div class="image">
+                            <img decoding="async" src="images/avatar-06.png" alt="" loading="lazy">
+                        </div>
+                        <div class="menu">
+                            <ul class="links">
+                                <li><a href="index.html"><i class="fas fa-home"></i> Home</a>
+                                </li>
+                                <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End head -->
+            <div class="temp-table bg-secondary rad-12 p-20  shadow">
+                <div class="filter-bar d-flex gap-10 mb-20 flex-wrap">
+                    <input type="search" placeholder="Search by name or email..." class="input w-200" />
+
+                    <select class="input w-200">
+                        <option value="">All Roles</option>
+                        <option value="admin">Admin</option>
+                        <option value="instructor">Instructor</option>
+                        <option value="student">Student</option>
+                    </select>
+
+                    <select class="input w-200">
+                        <option value="">All Statuses</option>
+                        <option value="active">Active</option>
+                        <option value="pending">Pending</option>
+                        <option value="banned">Banned</option>
+                    </select>
+
+                    <button class="btn-glass">Apply Filter</button>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="projects-table w-full text-white fs-14">
+                        <thead class="bg-main fs-15 p-20">
+                            <tr>
+                                <th>Avatar</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/avatar-02.png" class="rad-circle w-50 h-50" /></td>
+                                <td>Ali Hassan</td>
+                                <td>ali@scenelab.com</td>
+                                <td>Admin</td>
+                                <td><span class="label-green text-white p-6 rad-6">Active</span></td>
+                                <td>
+                                    <div class="d-flex gap-10">
+                                        <button class="btn-glass btn-view fs-13">View</button>
+                                        <button class="btn-glass btn-edit fs-13">Edit</button>
+                                        <button class="btn-glass btn-delete fs-13">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/avatar-01.png" class="rad-circle w-50 h-50" /></td>
+                                <td>Sara Mahmoud</td>
+                                <td>sara@scenelab.com</td>
+                                <td>Instructor</td>
+                                <td><span class="label-orange text-white p-6 rad-6">Pending</span></td>
+                                <td>
+                                    <div class="d-flex gap-10">
+                                        <button class="btn-glass btn-view fs-13">View</button>
+                                        <button class="btn-glass btn-edit fs-13">Edit</button>
+                                        <button class="btn-glass btn-delete fs-13">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/avatar-04.png" class="rad-circle w-100 h-100" /></td>
+                                <td>Mohamed Zaki</td>
+                                <td>zaki@scenelab.com</td>
+                                <td>Student</td>
+                                <td><span class="label-red text-white p-6 rad-6">Banned</span></td>
+                                <td>
+                                    <div class="d-flex gap-10">
+                                        <button class="btn-glass btn-view fs-13">View</button>
+                                        <button class="btn-glass btn-edit fs-13">Edit</button>
+                                        <button class="btn-glass btn-delete fs-13">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

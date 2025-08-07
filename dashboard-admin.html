@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | SceneLab</title>
+    <!-- Framework Utilities -->
+    <link rel="stylesheet" href="css/framework.css" />
+    <!-- Custom Dashboard Styling -->
+    <link rel="stylesheet" href="css/dashboard-admin.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-main p-20 p-relative shadow">
+            <h2 class="text-center mb-20 mt-10 hide-mobile">🎬 <span class="text-primary">Scene</span>Lab</h2>
+            <ul>
+                <li>
+                    <a href="dashboard-admin.html"
+                        class="active text-secondary p-10 transition d-flex align-center rad-6">
+                        <i class="fas fa-columns"></i> <span class="hide-mobile">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-users fa-fw"></i> <span class="hide-mobile fs-14">Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-book fa-fw"></i> <span class="hide-mobile fs-14">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="addcourse.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-plus-circle fa-fw"></i> <span class="hide-mobile fs-14">Add Course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-cog fa-fw"></i> <span class="hide-mobile fs-14">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full ">
+            <!-- Start head -->
+            <div class="head bg-secondary flex-between p-15 ">
+                <div class="search p-relative">
+                    <input class="rad-10 transition" type="search" placeholder="Type A Keyword" name="search">
+                </div>
+                <div class="icon d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <div class="avatar-wrapper">
+                        <div class="image">
+                            <img decoding="async" src="images/avatar-06.png" alt="" loading="lazy">
+                        </div>
+                        <div class="menu">
+                            <ul class="links">
+                                <li><a href="index.html"><i class="fas fa-home"></i> Home</a>
+                                </li>
+                                <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End head -->
+            <h1 class="p-relative">Dashboard</h1>
+            <div class="wrapper d-grid gap-20 mr-20 ml-20 ">
+                <!-- Start Welcome Widget -->
+                <div class="welcome bg-secondary p-20 rad-10 txt-c-mobile block-mobile flex-between shadow slideInUp">
+                    <div class="intro d-flex flex-column space-between gap-20">
+                        <h2 class="fs-30">Welcome back, <span class="text-primary d-block">Manager👋</span> </h2>
+                        <p class="text-secondary"> Glad to see you again at SceneLab</p>
+                        <span><i class="fas fa-calendar-alt fa-fw text-primary"></i> 24 July 2025</span>
+                    </div>
+                    <div class="image">
+                        <img src="images/Leader-bro.png" alt="Admin Avatar" class="admin-avatar" />
+                    </div>
+                </div>
+                <!-- End Welcome Widget -->
+                <!-- Start quick-draft Widget -->
+                <div class="quick-draft bg-secondary rad-10 p-20 shadow slideInUp ">
+                    <h2 class="text-white  mb-10 mt-0">Quick Draft ✍️</h2>
+                    <p class="text-secondary mb-20">Note down your next editing idea, title, or workflow step</p>
+
+                    <form>
+                        <input type="text" placeholder="Scene Title..." class="input w-full mb-10" />
+                        <textarea placeholder="Describe your idea..."
+                            class="textarea full-width w-full mb-10"></textarea>
+                        <button type="submit" class="btn btn-glass">💾 Save Draft</button>
+                    </form>
+                </div>
+                <!-- End quick-draft Widget -->
+                <!-- Start Stats Widget -->
+                <div class="stats d-grid gap-20 slideInUp">
+                    <div class="stat-box bg-main p-20 rad-10 shadow transition">
+                        <div class="mb-15"><i class="fas fa-users fa-2x text-primary"></i></div>
+                        <h3 class="fs-24 text-white  fw-bold">1,240</h3>
+                        <p class="fs-14 text-secondary mt-5">Total Users</p>
+                    </div>
+                    <div class="stat-box bg-main p-20 rad-10 txt-c shadow transition">
+                        <div class="mb-15"><i class="fas fa-book-open fa-2x text-primary mb-10"></i></div>
+                        <h3 class="fs-24 text-white  fw-bold">58</h3>
+                        <p class="fs-14 text-secondary mt-5">Available Courses</p>
+                    </div>
+                    <div class="stat-box bg-main p-20 rad-10 txt-c shadow transition">
+                        <div class="mb-15"><i class="fas fa-dollar-sign fa-2x text-primary mb-10"></i></div>
+                        <h3 class="fs-24 text-white  fw-bold">$12,750</h3>
+                        <p class="fs-14 text-secondary mt-5">Monthly Revenue</p>
+                    </div>
+                    <div class="stat-box bg-main p-20 rad-10 txt-c shadow transition">
+                        <div class="mb-15"><i class="fas fa-signal fa-2x text-primary mb-10"></i></div>
+                        <h3 class="fs-24 text-white  fw-bold">94</h3>
+                        <p class="fs-14 text-secondary mt-5">Active Sessions</p>
+                    </div>
+                </div>
+                <!-- End Stats Widget -->
+                <!-- Start Yearly Target Widget -->
+                <div class="yearly-targets bg-secondary p-20 rad-10 slideInUp shadow">
+                    <h2 class="text-white  mb-20 mt-0">🎯 Yearly Targets</h2>
+
+                    <!-- Revenue Target -->
+                    <div class="target-box d-flex align-center gap-20 mb-20">
+                        <div class="icon bg-orange text-white rad-10 d-flex flex-center w-60 h-60">
+                            <i class="fas fa-dollar-sign fa-lg"></i>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-secondary mb-5">Revenue</p>
+                            <p class="text-white  fw-bold mb-5">$16,000 / $20,000</p>
+                            <div class="progress h-8">
+                                <span class="progress-bar bg-orange d-block w-80p"></span>
+                                <span class="progress-label label-orange" style="left: 80%;">80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projects Target -->
+                    <div class="target-box d-flex align-center gap-20 mb-20 ">
+                        <div class="icon bg-primary text-white rad-10 d-flex flex-center w-60 h-60 shadow">
+                            <i class="fas fa-code fa-lg"></i>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-secondary mb-5">Projects</p>
+                            <p class="text-white  fw-bold mb-5">12 / 24</p>
+                            <div class="progress h-8">
+                                <span class="progress-bar d-block w-50p bg-primary"></span>
+                                <span class="progress-label label-red" style="left: 50%;">50%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Team Target -->
+                    <div class="target-box d-flex align-center gap-20 mb-20">
+                        <div class="icon bg-success text-white rad-10 d-flex flex-center w-60 h-60">
+                            <i class="fas fa-users fa-lg"></i>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-secondary mb-5">Team Members</p>
+                            <p class="text-white  fw-bold mb-5">11 / 12</p>
+                            <div class="progress h-8">
+                                <span class="progress-bar d-block w-90p bg-success"></span>
+                                <span class="progress-label label-green" style="left: 90%;">90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course Published -->
+                    <div class="target-box d-flex align-center gap-20 mb-20">
+                        <div class="icon bg-primary text-white rad-10 d-flex flex-center w-60 h-60 shadow">
+                            <i class="fas fa-video fa-lg"></i>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-secondary mb-5">Courses Published</p>
+                            <p class="text-white fw-bold mb-5">18 / 30</p>
+                            <div class="progress h-8">
+                                <span class="progress-bar d-block w-60p bg-primary"></span>
+                                <span class="progress-label label-red" style="left: 60%;">60%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ad Campaigns Reached -->
+                    <div class="target-box d-flex align-center gap-20 mb-20">
+                        <div class="icon bg-success text-white rad-10 d-flex flex-center w-60 h-60 shadow">
+                            <i class="fas fa-bullhorn fa-lg"></i>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-secondary mb-5">Ad Campaigns Reached</p>
+                            <p class="text-white fw-bold mb-5">58,000 / 60,000</p>
+                            <div class="progress h-8">
+                                <span class="progress-bar d-block w-95p bg-success"></span>
+                                <span class="progress-label label-green bg-success" style="left: 95%;">95%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Yearly Target Widget -->
+
+                <!-- Start Cuorse Analytics-->
+                <div class="course-analytics bg-secondary p-20 rad-10 shadow slideInUp">
+                    <h2 class="text-white mb-20">
+                        <i class="fas fa-chart-line text-primary mr-10"></i> Course Analytics
+                    </h2>
+
+                    <div class="courses-grid d-grid grid-250 gap-20">
+
+                        <!-- Course Card 1 -->
+                        <div class="course-card bg-main rad-10 p-20 shadow transition p-relative">
+                            <div class="d-flex align-center gap-15 mb-15">
+                                <img src="images/courses/motion.png" alt="Motion Design"
+                                    class="course-thumb rad-6 bg-secondary" />
+                                <h3 class="fs-16 text-white fw-bold">Motion Design 101</h3>
+                            </div>
+
+                            <div class="mb-10 d-flex justify-between">
+                                <span class="text-secondary fs-15">👨‍🎓 Students</span>
+                                <span class="text-white fw-bold fs-15 mb-5">1,200</span>
+                            </div>
+
+                            <div class="mb-10">
+                                <span class="text-secondary fs-15 d-block mb-10 completion ">🧠 Completion</span>
+                                <div class="progress h-8">
+                                    <span class="progress-bar bg-success d-block w-90p"></span>
+                                    <span class="progress-label label-green" style="left: 90%;">90%</span>
+                                </div>
+                            </div>
+
+                            <div class="mb-10 d-flex justify-between align-center">
+                                <span class="text-secondary fs-13">⭐ Rating</span>
+                                <span class="text-white fs-13">★★★★☆ <span
+                                        class="text-secondary fs-12">(4.3)</span></span>
+                            </div>
+
+                            <div class="d-flex justify-between align-center mt-10">
+                                <span class="text-secondary fs-13">📈 Growth</span>
+                                <span class="text-success fw-bold fs-13 c-success">▲ 8.4%</span>
+                            </div>
+                        </div>
+                        <!-- Course Card 2 -->
+                        <div class="course-card bg-main rad-10 p-20 shadow transition p-relative">
+                            <div class="d-flex align-center gap-15 mb-15">
+                                <img src="images/courses/after-effects.png" alt="After Effects" class="course-thumb" />
+                                <h3 class="fs-16 text-white fw-bold">After Effects Mastery</h3>
+                            </div>
+                            <div class="mb-10 d-flex justify-between">
+                                <span class="text-secondary fs-15">👨‍🎓 Students</span>
+                                <span class="text-white fw-bold fs-15 mb-5">950</span>
+                            </div>
+                            <div class="mb-10">
+                                <span class="text-secondary fs-15 d-block mb-10 completion">🧠 Completion</span>
+                                <div class="progress h-8">
+                                    <span class="progress-bar d-block w-50p" style="background-color: #f0ad4e;"></span>
+                                    <span class="progress-label label-orange" style="left: 50%;">50%</span>
+                                </div>
+                            </div>
+                            <div class="mb-10 d-flex justify-between align-center">
+                                <span class="text-secondary fs-13">⭐ Rating</span>
+                                <span class="text-white fs-13">★★★★★ <span
+                                        class="text-secondary fs-12">(4.9)</span></span>
+                            </div>
+                            <div class="d-flex justify-between align-center mt-10">
+                                <span class="text-secondary fs-13">📈 Growth</span>
+                                <span class="text-success fw-bold fs-13 c-success">▲ 12.1%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End Cuorse Analytics-->
+
+                <!-- Start Latest Tasks Widget -->
+                <div class="latest-tasks bg-secondary p-20 rad-10 slideInUp shadow">
+                    <h2 class="text-white  mb-20 mt-0">📝 Latest Tasks</h2>
+
+                    <!-- Task Item -->
+                    <div class="task-row flex-between p-10 mb-15">
+                        <label class="task-box d-flex align-center gap-10">
+                            <input type="checkbox" class="checkbox" />
+                            <div class="task-text">
+                                <p class="text-white  fw-bold mb-10">Finalize Homepage Animation</p>
+                                <p class="fs-14 text-secondary">Export Hero section as Lottie JSON</p>
+                            </div>
+                        </label>
+                        <i class="fa-solid fa-trash delete-icon text-secondary transition"></i>
+                    </div>
+                    <!-- Optimize Export Settings -->
+                    <div class="task-row flex-between p-10 mb-15">
+                        <label class="task-box d-flex align-center gap-10">
+                            <input type="checkbox" class="checkbox" />
+                            <div class="task-text">
+                                <p class="text-white fw-bold mb-10">Optimize Export Settings</p>
+                                <p class="fs-14 text-secondary">Adjust bitrate and format for social media platforms</p>
+                            </div>
+                        </label>
+                        <i class="fa-solid fa-trash delete-icon text-secondary transition"></i>
+                    </div>
+
+                    <div class="task-row flex-between p-10 mb-15">
+                        <label class="task-box d-flex align-center gap-10">
+                            <input type="checkbox" class="checkbox" />
+                            <div class="task-text">
+                                <p class="text-white fw-bold mb-10">Review Voiceover Timing</p>
+                                <p class="fs-14 text-secondary">Sync narration with Scene 03 animations</p>
+                            </div>
+                        </label>
+                        <i class="fa-solid fa-trash delete-icon text-secondary transition"></i>
+                    </div>
+
+                    <div class="task-row flex-between mb-15">
+                        <label class="task-box d-flex align-center gap-10">
+                            <input type="checkbox" class="checkbox" />
+                            <div class="task-text">
+                                <p class="text-white fw-bold mb-10">Record Figma UI Tutorial</p>
+                                <p class="fs-14 text-secondary">Focus on component-based design</p>
+                            </div>
+                        </label>
+                        <i class="fa-solid fa-trash delete-icon text-secondary transition"></i>
+                    </div>
+
+                    <div class="task-row flex-between mb-15">
+                        <label class="task-box d-flex align-center gap-10">
+                            <input type="checkbox" class="checkbox" />
+                            <div class="task-text">
+                                <p class="text-white fw-bold mb-10">Test Dashboard Responsiveness</p>
+                                <p class="fs-14 text-secondary">Mobile layout, sidebar behavior</p>
+                            </div>
+                        </label>
+                        <i class="fa-solid fa-trash delete-icon text-secondary transition"></i>
+                    </div>
+
+                    <div class="task-row flex-between">
+                        <label class="task-box d-flex align-center gap-10">
+                            <input type="checkbox" class="checkbox" />
+                            <div class="task-text">
+                                <p class="text-white  fw-bold mb-10">Sync Design System Colors</p>
+                                <p class="fs-14 text-secondary">Match SceneLab theme across pages</p>
+                            </div>
+                        </label>
+                        <i class="fa-solid fa-trash delete-icon text-secondary transition"></i>
+                    </div>
+                </div>
+                <!-- End Latest Tasks Widget -->
+
+                <!-- Start System Feature -->
+                <div class="system-features bg-secondary p-20 rad-10 shadow ">
+                    <h2 class="text-white mb-20">
+                        <i class="fas fa-cogs text-primary mr-10"></i> System Features
+                    </h2>
+
+                    <div class="features d-grid grid-150 gap-20">
+
+                        <!-- Feature 1 -->
+                        <div class="feature-card bg-main rad-10 p-20 txt-c transition shadow">
+                            <i class="fas fa-shield-alt fa-2x text-primary mb-10"></i>
+                            <h3 class="fs-15 text-white mb-10">Secure Login</h3>
+                            <p class="text-secondary fs-13">Multi-layer encryption ensures your data stays safe</p>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="feature-card bg-main rad-10 p-20 txt-c transition shadow">
+                            <i class="fas fa-bolt fa-2x text-primary mb-10"></i>
+                            <h3 class="fs-15 text-white mb-10">Lightning Performance</h3>
+                            <p class="text-secondary fs-13">Optimized for speed even with large video assets</p>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div class="feature-card bg-main rad-10 p-20 txt-c transition shadow">
+                            <i class="fas fa-users fa-2x text-primary mb-10"></i>
+                            <h3 class="fs-15 text-white mb-10">Team Collaboration</h3>
+                            <p class="text-secondary fs-13">Real-time access and comments on shared projects</p>
+                        </div>
+
+                        <!-- Feature 4 -->
+                        <div class="feature-card bg-main rad-10 p-20 txt-c transition shadow">
+                            <i class="fas fa-cloud-upload-alt fa-2x text-primary mb-10"></i>
+                            <h3 class="fs-15 text-white mb-10">Cloud Sync</h3>
+                            <p class="text-secondary fs-13">Never lose progress — autosave to cloud in real time</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- End System Feature -->
+
+                <!-- Start Recent Uploads -->
+                <div class="latest-uploads bg-secondary p-20 rad-10 shadow">
+                    <h2 class="text-white mb-20">
+                        <i class="fas fa-file-upload text-primary mr-10"></i>Latest Uploads
+                    </h2>
+                    <!-- Start Upload Row -->
+                    <div class="file-row flex-between mb-15 pb-10 border-bottom">
+                        <div class="d-flex align-center gap-15">
+                            <img src="images/icons/pdf.svg" class="file-icon w-50 h-50" />
+                            <div>
+                                <p class="text-white fw-bold fs-14 mb-5">my-file.pdf</p>
+                                <p class="fs-13 text-secondary">Elzero</p>
+                            </div>
+                        </div>
+                        <span class="badge bg-primary text-white fs-13 rad-6 p-5">2.9mb</span>
+                    </div>
+
+                    <div class="file-row flex-between mb-15 pb-10 border-bottom">
+                        <div class="d-flex align-center gap-15">
+                            <img src="images/icons/avi.svg" class="file-icon w-50 h-50" />
+                            <div>
+                                <p class="text-white fw-bold fs-14 mb-5">My-Video-File.avi</p>
+                                <p class="fs-13 text-secondary">Admin</p>
+                            </div>
+                        </div>
+                        <span class="badge bg-primary text-white fs-13 rad-6 p-5">4.9mb</span>
+                    </div>
+
+                    <div class="file-row flex-between mb-15 pb-10 border-bottom">
+                        <div class="d-flex align-center gap-15">
+                            <img src="images/icons/psd.svg" class="file-icon w-50 h-50" />
+                            <div>
+                                <p class="text-white fw-bold fs-14 mb-5">My-Psd-File.pdf</p>
+                                <p class="fs-13 text-secondary">Osama</p>
+                            </div>
+                        </div>
+                        <span class="badge bg-primary text-white fs-13 rad-6 p-5">4.5mb</span>
+                    </div>
+
+                    <div class="file-row flex-between mb-15 pb-10 border-bottom">
+                        <div class="d-flex align-center gap-15">
+                            <img src="images/icons/zip.svg" class="file-icon w-50 h-50" />
+                            <div>
+                                <p class="text-white fw-bold fs-14 mb-5">My-Zip-File.pdf</p>
+                                <p class="fs-13 text-secondary">User</p>
+                            </div>
+                        </div>
+                        <span class="badge bg-primary text-white fs-13 rad-6 p-5">8.9mb</span>
+                    </div>
+
+                    <div class="file-row flex-between">
+                        <div class="d-flex align-center gap-15">
+                            <img src="images/icons/eps.svg" class="file-icon w-50 h-50" />
+                            <div>
+                                <p class="text-white fw-bold fs-14 mb-5">My-Eps-File.pdf</p>
+                                <p class="fs-13 text-secondary">Designer</p>
+                            </div>
+                        </div>
+                        <span class="badge bg-primary text-white fs-13 rad-6 p-5">8.9mb</span>
+                    </div>
+                </div>
+                <!-- End Recent Uploads -->
+
+                <!-- Start Social Stats Widget -->
+                <div class="social-media p-20 bg-secondary rad-10 p-relative shadow">
+                    <h2 class="mt-0 mb-25">📢 Social Media Stats</h2>
+
+                    <div
+                        class="box x-twitter bg-main p-15 p-relative mb-10 flex-between align-center rad-6 shadow transition">
+                        <div class="circle-icon shadow text-white w-50 h-50 flex-center rad-circle">
+                            <i class="fa-brands fa-x-twitter fa-lg"></i>
+                        </div>
+                        <span class="text text-white fw-bold">90K Followers</span>
+                        <a class="fs-13 btn-glass shadow rad-6" href="#">Follow</a>
+                    </div>
+
+                    <div class="box facebook p-15 p-relative mb-10 flex-between align-center rad-6 shadow transition">
+                        <div class="circle-icon bg-facebook text-white w-50 h-50 flex-center rad-circle">
+                            <i class="fa-brands fa-facebook-f fa-lg"></i>
+                        </div>
+                        <span class="text text-white fw-bold">2M Likes</span>
+                        <a class="fs-13 btn-glass btn-facebook rad-6" href="#">Like</a>
+                    </div>
+
+                    <div class="box youtube p-15 p-relative mb-10 flex-between align-center rad-6 shadow transition">
+                        <div class="circle-icon bg-youtube text-white w-50 h-50 flex-center rad-circle">
+                            <i class="fa-brands fa-youtube fa-lg"></i>
+                        </div>
+                        <span class="text text-white fw-bold">1M Subs</span>
+                        <a class="fs-13 btn-glass btn-red rad-6" href="#">Subscribe</a>
+                    </div>
+
+                    <div class="box linkedin p-15 p-relative mb-10 flex-between align-center rad-6 shadow transition">
+                        <div class="circle-icon bg-linkedin text-white w-50 h-50 flex-center rad-circle">
+                            <i class="fa-brands fa-linkedin fa-lg"></i>
+                        </div>
+                        <span class="text text-white fw-bold">70K Followers</span>
+                        <a class="fs-13 btn-glass btn-linkedin rad-6" href="#">Follow</a>
+                    </div>
+                </div>
+                <!--End Social Stats Widget  -->
+            </div>
+            <!-- Projects Table -->
+            <div class="temp-table bg-secondary rad-12 p-20 m-20 shadow">
+                <h2 class="section-title mb-25 text-white mt0">
+                    <i class="fas fa-briefcase text-primary mr-10"></i> Projects Summary
+                </h2>
+                <div class="table-responsive">
+                    <table class="projects-table w-full text-white fs-14">
+                        <thead class="bg-main fs-15 p-20">
+                            <tr>
+                                <th>Project Name</th>
+                                <th>Deadline</th>
+                                <th>Client</th>
+                                <th>Budget</th>
+                                <th>Team</th>
+                                <th>Progress</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SceneLab Studio UI</td>
+                                <td>01 Sep 2025</td>
+                                <td>SceneCorp</td>
+                                <td>$4,200</td>
+                                <td>
+                                    <div class="avatars">
+                                        <img src="images/avatar-01.png" />
+                                        <img src="images/avatar-02.png" />
+                                        <img src="images/avatar-03.png" />
+                                        <img src="images/avatar-04.png" />
+                                    </div>
+                                </td>
+                                <td class="w-250">
+                                    <div class="progress h-8">
+                                        <span class="progress-bar d-block w-70p bg-orange"></span>
+                                        <span class="progress-label label-orange" style="left: 70%;">70%</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="label-orange p-6 rad-6">In Progress</span>
+                                </td>
+                            </tr>
+                            <tr class=" ">
+                                <td>Mobile Redesign</td>
+                                <td>15 Aug 2025</td>
+                                <td>Appify</td>
+                                <td>$2,600</td>
+                                <td>
+                                    <div class="avatars d-flex">
+                                        <img src="images/avatar-03.png" />
+                                        <img src="images/avatar-04.png" />
+                                        <img src="images/avatar-01.png" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="progress h-8 bg-light-gray rad-6 pr-10 ">
+                                        <span class="progress-bar bg-success rad-6 d-block w-100p"></span>
+                                        <span class="progress-label label-green text-white fs-12"
+                                            style="left: 100%;">100%</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class=" label-green text-white rad-6 p-6">Completed</span>
+                                </td>
+                            </tr>
+                            <tr class=" ">
+                                <td>Landing Page Design</td>
+                                <td>05 Oct 2025</td>
+                                <td>BrandX</td>
+                                <td>$1,500</td>
+                                <td>
+                                    <div class="avatars d-flex">
+                                        <img src="images/avatar-04.png" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="progress h-8">
+                                        <span class="progress-bar d-block w-40p bg-primary"></span>
+                                        <span class="progress-label label-red" style="left: 40%;">40%</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="label-red text-white rad-6 p-6">Delayed</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- End Projects Table -->
+        </div>
+    </div>
+</body>
+
+</html>

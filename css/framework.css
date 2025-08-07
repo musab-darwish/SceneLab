@@ -1,0 +1,641 @@
+/* ============================
+   🎨 CSS VARIABLES & ROOT CONFIG
+============================= */
+:root {
+    --main-bg-color: #0D0D0D;
+    --secondary-bg-color: #1A1A1A;
+    --primary-color: #E50914;
+    --hover-color: rgba(229, 9, 20, 0.1);
+    --main-text-color: #FFFFFF;
+    --secondary-text-color: #ddd;
+    --best-box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.2), 0 8px 20px rgba(255, 0, 0, 0.1);
+    --sidebar-width: 220px;
+    --main-transition: 0.3s;
+    --border-radius: 6px;
+}
+
+/* ============================
+   🔄 CSS RESET & BASE STYLES
+============================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ============================
+    ANIMATIONS
+============================= */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.slideInUp {
+    animation: slideInUp 0.4s ease-in-out;
+}
+
+/* ============================
+   🎨 UTILITY CLASSES - COLORS
+============================= */
+.bg-main {
+    background-color: var(--main-bg-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-bg-color);
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-success {
+    background-color: #28a745;
+}
+
+.bg-orange {
+    background-color: #f0ad4e;
+}
+
+.bg-twitter {
+    background-color: #1DA1F2;
+}
+
+.bg-youtube {
+    background-color: #FF0000;
+}
+
+.bg-facebook {
+    background-color: #3b5998;
+}
+
+.bg-linkedin {
+    background-color: #0077B5;
+}
+
+.bg-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.text-white {
+    color: var(--main-text-color);
+}
+
+.text-secondary {
+    color: var(--secondary-text-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.c-success {
+    color: #28a745;
+}
+
+/* ============================
+   📐 UTILITY CLASSES - DISPLAY & FLEX
+============================= */
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.d-block {
+    display: block;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Grid Templates */
+.grid-150 {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.grid-250 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-300 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-400 {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.grid-450 {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+/* Gap Utilities */
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+/* ============================
+   📍 UTILITY CLASSES - POSITION
+============================= */
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+/* ============================
+   📏 UTILITY CLASSES - SPACING
+============================= */
+/* Padding */
+.p-6 {
+    padding: 6px;
+}
+
+.p-8 {
+    padding: 8px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-40 {
+    padding: 40px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+/* Margin */
+.m-10 {
+    margin: 10px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-15 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+/* ============================
+   🔤 UTILITY CLASSES - TYPOGRAPHY
+============================= */
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.txt-c {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+/* ============================
+   📐 UTILITY CLASSES - DIMENSIONS
+============================= */
+/* Width */
+.w-full {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50px;
+}
+
+.w-60 {
+    width: 60px;
+}
+
+.w-80 {
+    width: 80px;
+}
+
+.w-100 {
+    width: 100px;
+}
+
+.w-150 {
+    width: 150px;
+}
+
+.w-200 {
+    width: 200px;
+}
+
+.w-250 {
+    width: 250px;
+}
+
+.w-30p {
+    width: 30%;
+}
+
+.w-35p {
+    width: 35%;
+}
+
+.w-40p {
+    width: 40%;
+}
+
+.w-45p {
+    width: 45%;
+}
+
+.w-50p {
+    width: 50%;
+}
+
+.w-60p {
+    width: 60%;
+}
+
+.w-65p {
+    width: 65%;
+}
+
+.w-70p {
+    width: 70%;
+}
+
+.w-75p {
+    width: 75%;
+}
+
+.w-80p {
+    width: 80%;
+}
+
+.w-85p {
+    width: 85%;
+}
+
+.w-90p {
+    width: 90%;
+}
+
+.w-95p {
+    width: 95%;
+}
+
+.w-100p {
+    width: 100%;
+}
+
+/* Height */
+.h-8 {
+    height: 8px;
+}
+
+.h-50 {
+    height: 50px;
+}
+
+.h-60 {
+    height: 60px;
+}
+
+.h-80 {
+    height: 80px;
+}
+
+.h-full {
+    height: 100%;
+}
+
+/* ============================
+   🔲 UTILITY CLASSES - BORDERS & RADIUS
+============================= */
+.b-none {
+    border: none;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.rad-6 {
+    border-radius: 6px;
+}
+
+.rad-10 {
+    border-radius: 10px;
+}
+
+.rad-12 {
+    border-radius: 12px;
+}
+
+.rad-20 {
+    border-radius: 20px;
+}
+
+.rad-circle {
+    border-radius: 50%;
+}
+
+.shadow {
+    box-shadow: var(--best-box-shadow);
+}
+
+/* ============================
+   ✨ UTILITY CLASSES - TRANSITIONS
+============================= */
+.transition {
+    transition: var(--main-transition);
+}
+
+/* ============================
+   📱 RESPONSIVE UTILITIES
+============================= */
+@media (max-width: 767px) {
+    .hide-mobile {
+        display: none !important;
+    }
+
+    .block-mobile {
+        display: block;
+    }
+
+    .txt-c-mobile {
+        text-align: center;
+    }
+}
+
+/* ============================
+   🌟 GLASSMORPHISM EFFECTS
+============================= */
+.glass-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+/* ============================
+   🔘 BUTTON COMPONENTS
+============================= */
+.btn-glass {
+    background: rgba(229, 9, 20, 0.15);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    border-radius: var(--border-radius);
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-glass:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: scale(1.03);
+}
+
+/* ============================
+   📊 PROGRESS BAR COMPONENTS
+============================= */
+.progress {
+    position: relative;
+    background-color: var(--main-bg-color);
+    border-radius: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Progress Label Bubble */
+.progress-label {
+    position: absolute;
+    top: -30px;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Arrow Below Bubble */
+.progress-label::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+}
+
+/* Progress Label Color Variants */
+.label-red {
+    background-color: var(--primary-color);
+}
+
+.label-red::after {
+    border-color: var(--primary-color) transparent transparent transparent;
+}
+
+.label-orange {
+    background-color: #f0ad4e;
+}
+
+.label-orange::after {
+    border-color: #f0ad4e transparent transparent transparent;
+}
+
+.label-green {
+    background-color: #28a745;
+}
+
+.label-green::after {
+    border-color: #28a745 transparent transparent transparent;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Course | SceneLab</title>
+    <!-- Framework Utilities -->
+    <link rel="stylesheet" href="css/framework.css" />
+    <!-- Custom Dashboard Styling -->
+    <link rel="stylesheet" href="css/dashboard-admin.css" />
+    <link rel="stylesheet" href="css/add-course.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-main p-20 p-relative shadow">
+            <h2 class="text-center mb-20 mt-10 hide-mobile">🎬 <span class="text-primary">Scene</span>Lab</h2>
+            <ul>
+                <li>
+                    <a href="dashboard-admin.html" class=" text-secondary p-10 transition d-flex align-center rad-6">
+                        <i class="fas fa-columns"></i> <span class="hide-mobile">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-users fa-fw"></i> <span class="hide-mobile fs-14">Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-book fa-fw"></i> <span class="hide-mobile fs-14">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="addcourse.html"
+                        class="active text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-plus-circle fa-fw"></i> <span class="hide-mobile fs-14">Add Course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-cog fa-fw"></i> <span class="hide-mobile fs-14">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full ">
+            <!-- Start head -->
+            <div class="head bg-secondary flex-between p-15 ">
+                <div class="search p-relative">
+                    <input class="rad-10 transition" type="search" placeholder="Type A Keyword" name="search">
+                </div>
+                <div class="icon d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <div class="avatar-wrapper">
+                        <div class="image">
+                            <img decoding="async" src="images/avatar-06.png" alt="" loading="lazy">
+                        </div>
+                        <div class="menu">
+                            <ul class="links">
+                                <li><a href="index.html"><i class="fas fa-home"></i> Home</a>
+                                </li>
+                                <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End head -->
+            <h1 class="p-relative page-title">Add New Course</h1>
+            <!-- Form Container -->
+            <div class="background"></div>
+            <div class="form-container d-flex justify-center">
+                <!-- Form Card -->
+                <div class="form-card w-full rad-20">
+                    <form id="courseForm" action="">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="title">Course Title</label>
+                                <input type="text" class="form-input" id="title" name="title"
+                                    placeholder="e.g. Advanced Motion Graphics" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="category">Category</label>
+                                <select class="form-select" id="category" name="category" required>
+                                    <option value="">Select Category</option>
+                                    <option value="motion-design">Motion Design</option>
+                                    <option value="video-editing">Video Editing</option>
+                                    <option value="3d-animation">3D Animation</option>
+                                    <option value="visual-effects">Visual Effects</option>
+                                    <option value="cinematography">Cinematography</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-row-full">
+                            <label for="description">Course Description</label>
+                            <textarea class="form-textarea" id="description" name="description"
+                                placeholder="Describe what students will learn in this course..." required></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="instructor">Instructor Name</label>
+                                <input type="text" class="form-input" id="instructor" name="instructor"
+                                    placeholder="e.g. John Smith" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="duration">Duration (hours)</label>
+                                <input type="number" class="form-input" id="duration" name="duration"
+                                    placeholder="e.g. 25" min="1" required />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="price">Price ($)</label>
+                                <input type="number" class="form-input" id="price" name="price" placeholder="e.g. 99"
+                                    min="0" step="0.01" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="difficulty">Difficulty Level</label>
+                                <select class="form-select" id="difficulty" name="difficulty" required>
+                                    <option value="">Select Level</option>
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-row-full">
+                            <label for="thumbnail">Course Thumbnail</label>
+                            <div class="file-input-wrapper">
+                                <input type="file" id="thumbnail" name="thumbnail" class="file-input"
+                                    accept="image/jpeg,image/png,image/webp" />
+                                <label for="thumbnail" class="file-input-label">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span>Choose Course Image</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-glass btn">
+                            <i class="fas fa-plus-circle"></i>
+                            Create Course
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

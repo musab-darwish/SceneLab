@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses | SceneLab</title>
+    <!-- Framework Utilities -->
+    <link rel="stylesheet" href="css/framework.css" />
+    <!-- Custom Dashboard Styling -->
+    <link rel="stylesheet" href="css/dashboard-admin.css" />
+    <link rel="stylesheet" href="css/courses.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-main p-20 p-relative shadow">
+            <h2 class="text-center mb-20 mt-10 hide-mobile">🎬 <span class="text-primary">Scene</span>Lab</h2>
+            <ul>
+                <li>
+                    <a href="dashboard-admin.html" class=" text-secondary p-10 transition d-flex align-center rad-6">
+                        <i class="fas fa-columns"></i> <span class="hide-mobile">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-users fa-fw"></i> <span class="hide-mobile fs-14">Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html"
+                        class="active text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-book fa-fw"></i> <span class="hide-mobile fs-14">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="addcourse.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-plus-circle fa-fw"></i> <span class="hide-mobile fs-14">Add Course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html" class="text-secondary p-10 transition sidebar-link d-flex align-center ">
+                        <i class="fas fa-cog fa-fw"></i> <span class="hide-mobile fs-14">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full ">
+            <!-- Start head -->
+            <div class="head bg-secondary flex-between p-15 ">
+                <div class="search p-relative">
+                    <input class="rad-10 transition" type="search" placeholder="Type A Keyword" name="search">
+                </div>
+                <div class="icon d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <div class="avatar-wrapper">
+                        <div class="image">
+                            <img decoding="async" src="images/avatar-06.png" alt="" loading="lazy">
+                        </div>
+                        <div class="menu">
+                            <ul class="links">
+                                <li><a href="index.html"><i class="fas fa-home"></i> Home</a>
+                                </li>
+                                <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End head -->
+            <h1 class="p-relative">Courses</h1>
+
+            <!-- Course Card -->
+            <div class="course-analytics bg-secondary p-20 rad-10 shadow m-20">
+                <div class="filter-tabs mb-15 d-grid grid-150 gap-10 transition">
+                    <button class="filter-tab active">All Courses</button>
+                    <button class="filter-tab">Video Editing</button>
+                    <button class="filter-tab">Motion Design</button>
+                    <button class="filter-tab">Audio Production</button>
+                    <button class="filter-tab">Content Strategy</button>
+                </div>
+                <div class="courses-grid d-grid grid-450 gap-20">
+
+                    <!-- Course Card 1 -->
+                    <div class="course-card bg-secondary rad-10 p-20 shadow transition p-relative slideInUp">
+                        <div class="course-info d-flex align-center gap-15 mb-15 ">
+                            <img src="images/courses/motion.png" alt="Motion Design"
+                                class="course-thumb rad-6 bg-secondary" />
+                            <h3 class="fs-20 text-white fw-bold">Motion Design 101</h3>
+                        </div>
+                        <div class="course-stats d-grid gap-15 p-15 bg-main rad-6">
+                            <div class="stat">
+                                <span class="stat-value">1,200</span>
+                                <span class="stat-label">👨‍🎓 Students</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.3</span>
+                                <span class="stat-label">⭐ Rating</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value growth-indicator">
+                                    <i class="fas fa-arrow-up"></i> 8.4%
+                                </span>
+                                <span class="stat-label">📈 Growth</span>
+                            </div>
+                        </div>
+                        <div class="course-level text-secondary fs-13 mb-10">
+                            🔰 Level: Intermediate
+                        </div>
+                        <div class="mb-10">
+                            <span class="completion text-secondary fs-15 d-block mb-10">- Completion -</span>
+                            <div class="progress h-8">
+                                <span class="progress-bar bg-success d-block w-90p"></span>
+                                <span class="progress-label label-green" style="left: 90%;">90%</span>
+                            </div>
+                        </div>
+                        <div class="course-footer flex-between align-center mt-20 pt-20 border-top">
+                            <span class="price">$165</span>
+                            <a href="#" class="btn-glass">View Course</a>
+                        </div>
+                    </div>
+                    <!-- Course Card 2 -->
+                    <div class="course-card bg-secondary rad-10 p-20 shadow transition p-relative slideInUp">
+                        <div class="course-info d-flex align-center gap-15 mb-15">
+                            <img src="images/courses/editing.jpg" alt="Video Editing"
+                                class="course-thumb rad-6 bg-secondary" />
+                            <h3 class="fs-20 text-white fw-bold">Video Editing Basics</h3>
+                        </div>
+                        <div class="course-stats d-grid gap-15 p-15 bg-main rad-6">
+                            <div class="stat"><span class="stat-value">980</span><span class="stat-label">👨‍🎓
+                                    Students</span></div>
+                            <div class="stat"><span class="stat-value">4.7</span><span class="stat-label">⭐
+                                    Rating</span></div>
+                            <div class="stat"><span class="stat-value growth-indicator"><i class="fas fa-arrow-up"></i>
+                                    12.1%</span><span class="stat-label">📈 Growth</span></div>
+                        </div>
+                        <div class="course-level text-secondary fs-13 mb-10">🔰 Level: Beginner</div>
+                        <div class="mb-10">
+                            <span class="completion text-secondary fs-15 d-block mb-10">- Completion -</span>
+                            <div class="progress h-8"><span class="progress-bar bg-orange d-block w-60p"></span><span
+                                    class="progress-label label-orange" style="left: 60%;">60%</span></div>
+                        </div>
+                        <div class="course-footer flex-between align-center mt-20 pt-20 border-top">
+                            <span class="price">$89</span><a href="#" class="btn-glass">View Course</a>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 3 -->
+                    <div class="course-card bg-secondary rad-10 p-20 shadow transition p-relative slideInUp">
+                        <div class="course-info d-flex align-center gap-15 mb-15">
+                            <img src="images/courses/after-effects.png" alt="Animation"
+                                class="course-thumb rad-6 bg-secondary" />
+                            <h3 class="fs-20 text-white fw-bold">Advanced Animation</h3>
+                        </div>
+                        <div class="course-stats d-grid gap-15 p-15 bg-main rad-6">
+                            <div class="stat"><span class="stat-value">720</span><span class="stat-label">👨‍🎓
+                                    Students</span></div>
+                            <div class="stat"><span class="stat-value">4.9</span><span class="stat-label">⭐
+                                    Rating</span></div>
+                            <div class="stat"><span class="stat-value growth-indicator"><i class="fas fa-arrow-up"></i>
+                                    15.0%</span><span class="stat-label"> 📈Growth</span></div>
+                        </div>
+                        <div class="course-level text-secondary fs-13 mb-10">🔰 Level: Advanced</div>
+                        <div class=" mb-10">
+                            <span class="completion text-secondary fs-15 d-block">- Completion -</span>
+                            <div class="progress h-8"><span class="progress-bar bg-orange d-block w-75p"></span><span
+                                    class="progress-label label-orange" style="left: 75%;">75%</span></div>
+                        </div>
+                        <div class="course-footer flex-between align-center mt-20 pt-20 border-top">
+                            <span class="price">$199</span><a href="#" class="btn-glass">View Course</a>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 4 -->
+                    <div class="course-card bg-secondary rad-10 p-20 shadow transition p-relative slideInUp">
+                        <div class="course-info d-flex align-center gap-15 mb-15">
+                            <img src="images/courses/audio.jpg" alt="Audio Production"
+                                class="course-thumb rad-6 bg-secondary" />
+                            <h3 class="fs-20 text-white fw-bold">Audio Production Essentials</h3>
+                        </div>
+                        <div class="course-stats d-grid gap-15 p-15 bg-main rad-6">
+                            <div class="stat"><span class="stat-value">550</span><span class="stat-label">👨‍🎓
+                                    Students</span></div>
+                            <div class="stat"><span class="stat-value">4.5</span><span class="stat-label">⭐
+                                    Rating</span></div>
+                            <div class="stat"><span class="stat-value growth-indicator"><i class="fas fa-arrow-up"></i>
+                                    7.8%</span><span class="stat-label">📈 Growth</span></div>
+                        </div>
+                        <div class="course-level text-secondary fs-13 mb-10">🔰 Level: Intermediate</div>
+                        <div class=" mb-10">
+                            <span class="completion text-secondary fs-15 d-block mb-10">- Completion -</span>
+                            <div class="progress h-8"><span class="progress-bar bg-primary d-block w-40p"></span><span
+                                    class="progress-label label-red" style="left: 40%;">40%</span></div>
+                        </div>
+                        <div class="course-footer flex-between align-center mt-20 pt-20 border-top">
+                            <span class="price">$129</span><a href="#" class="btn-glass">View Course</a>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 5 -->
+                    <div class="course-card bg-secondary rad-10 p-20 shadow transition p-relative slideInUp">
+                        <div class="course-info d-flex align-center gap-15 mb-15">
+                            <img src="images/courses/shot.jpg" alt="Storytelling"
+                                class="course-thumb rad-6 bg-secondary" />
+                            <h3 class="fs-20 text-white fw-bold">Visual Storytelling</h3>
+                        </div>
+                        <div class="course-stats d-grid gap-15 p-15 bg-main rad-6">
+                            <div class="stat"><span class="stat-value">680</span><span class="stat-label">👨‍🎓
+                                    Students</span></div>
+                            <div class="stat"><span class="stat-value">4.4</span><span class="stat-label">⭐
+                                    Rating</span></div>
+                            <div class="stat"><span class="stat-value growth-indicator"><i class="fas fa-arrow-up"></i>
+                                    6.3%</span><span class="stat-label">📈 Growth</span></div>
+                        </div>
+                        <div class="course-level text-secondary fs-13 mb-10">🔰 Level: Beginner</div>
+                        <div class=" mb-10">
+                            <span class="completion text-secondary fs-15 d-block mb-10">- Completion -</span>
+                            <div class="progress h-8"><span class="progress-bar bg-success d-block w-85p"></span><span
+                                    class="progress-label label-green" style="left: 85%;">85%</span></div>
+                        </div>
+                        <div class="course-footer flex-between align-center mt-20 pt-20 border-top">
+                            <span class="price">$99</span><a href="#" class="btn-glass">View Course</a>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 6 -->
+                    <div class="course-card bg-secondary rad-10 p-20 shadow transition p-relative slideInUp">
+                        <div class="course-info d-flex align-center gap-15 mb-15">
+                            <img src="images/courses/Color-Grading.jpg" alt="Color Grading"
+                                class="course-thumb rad-6 bg-secondary" />
+                            <h3 class="fs-20 text-white fw-bold">Color Grading Masterclass</h3>
+                        </div>
+                        <div class="course-stats d-grid gap-15 p-15 bg-main rad-6">
+                            <div class="stat"><span class="stat-value">840</span><span class="stat-label">👨‍🎓
+                                    Students</span></div>
+                            <div class="stat"><span class="stat-value">4.8</span><span class="stat-label">⭐
+                                    Rating</span></div>
+                            <div class="stat"><span class="stat-value growth-indicator"><i class="fas fa-arrow-up"></i>
+                                    9.1%</span><span class="stat-label">📈 Growth</span></div>
+                        </div>
+                        <div class="course-level text-secondary fs-13 mb-10">🔰 Level: Advanced</div>
+                        <div class=" mb-10">
+                            <span class="completion text-secondary fs-15 d-block mb-10">- Completion -</span>
+                            <div class="progress h-8"><span class="progress-bar bg-orange d-block w-65p"></span><span
+                                    class="progress-label label-orange" style="left: 65%;">65%</span></div>
+                        </div>
+                        <div class="course-footer flex-between align-center mt-20 pt-20 border-top">
+                            <span class="price">$175</span><a href="#" class="btn-glass">View Course</a>
+                        </div>
+                    </div>
+                    <!-- Course Card 6 -->
+                    <div class="course-card bg-secondary rad-10 p-20 shadow transition p-relative slideInUp">
+                        <div class="course-info d-flex align-center gap-15 mb-15">
+                            <img src="images/courses/cinematic-light.jpg" alt="Cinematic Lighting"
+                                class="course-thumb rad-6 bg-secondary" />
+                            <h3 class="fs-20 text-white fw-bold">Cinematic Lighting</h3>
+                        </div>
+                        <div class="course-stats d-grid gap-15 p-15 bg-main rad-6">
+                            <div class="stat"><span class="stat-value">1,050</span><span class="stat-label">👨‍🎓
+                                    Students</span></div>
+                            <div class="stat"><span class="stat-value">4.6</span><span class="stat-label">⭐
+                                    Rating</span></div>
+                            <div class="stat"><span class="stat-value growth-indicator"><i class="fas fa-arrow-up"></i>
+                                    11.4%</span><span class="stat-label">📈 Growth</span></div>
+                        </div>
+                        <div class="course-level text-secondary fs-13 mb-10">🔰 Level: Intermediate</div>
+                        <div class=" mb-10">
+                            <span class="completion text-secondary fs-15 d-block mb-10">- Completion -</span>
+                            <div class="progress h-8"><span class="progress-bar bg-success d-block w-99p"></span><span
+                                    class="progress-label label-green" style="left: 99%;">99%</span></div>
+                        </div>
+                        <div class="course-footer flex-between align-center mt-20 pt-20 border-top">
+                            <span class="price">$190</span><a href="#" class="btn-glass">View Course</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
