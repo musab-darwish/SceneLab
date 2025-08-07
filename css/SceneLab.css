@@ -955,7 +955,7 @@ F .main-title:hover {
 .gallery .container .image::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
     width: 0;
     height: 0;
