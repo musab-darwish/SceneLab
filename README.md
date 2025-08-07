@@ -65,10 +65,6 @@ The platform also follows a **mobile-first design approach**, ensuring full resp
 ---
 ## 📸 Screenshots
 
-## 📸 Screenshots
-
-> *(Preview of the key pages in SceneLab)*
-
 ### 🏠 Home Page
 ![Home Page](screenshots/Home.png)
 
