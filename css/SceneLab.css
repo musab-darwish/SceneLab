@@ -110,7 +110,7 @@ a {
     z-index: 2;
 }
 
-F .main-title:hover {
+.main-title:hover {
     border: 2px solid white;
     color: var(--main-text-color);
     transition-delay: 0.5s;
@@ -925,6 +925,7 @@ F .main-title:hover {
 
 .gallery .main-title {
     margin-bottom: 30px;
+    font-size: 25px;
 }
 
 .gallery .section-intro {
@@ -955,7 +956,7 @@ F .main-title:hover {
 .gallery .container .image::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%;
     width: 0;
     height: 0;
