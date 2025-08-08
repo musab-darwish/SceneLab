@@ -100,6 +100,7 @@ a {
 
 .main-title {
     color: var(--main-text-color);
+    text-transform: uppercase;
     margin: 0 auto 70px;
     padding: 10px 20px;
     font-size: 30px;
@@ -120,14 +121,13 @@ a {
 .main-title::before,
 .main-title::after {
     content: "";
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary-color);
     position: absolute;
+    border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
-    height: 13px;
-    width: 13px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    z-index: 1;
 }
 
 .main-title::before {
@@ -308,10 +308,13 @@ a {
 /* === ===  End Animation === === */
 /* === ===  Start Header === === */
 .image-bg {
+    background: image-set(url(../images/backgrond1.avif) type("image/avif"),
+            url(../images/backgrond1.webp) type("image/webp"),
+            url(../images/backgrond1.jpg) type("image/jpeg")) center/cover no-repeat;
     min-height: 100vh;
-    background: url(../images/backgrond1.jpg) center/cover no-repeat;
     position: relative;
 }
+
 
 .image-bg .overlay {
     background-color: rgb(0 0 0 / 70%);
@@ -964,6 +967,19 @@ a {
     background-color: var(--hover-color);
     transform: translate(-50%, -50%);
     z-index: 2;
+}
+
+.gallery .stabilize .thumb-wrap {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.gallery .stabilize .thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 .gallery .container .image:hover::before {
