@@ -27,7 +27,7 @@ body::before {
 
 .register-box {
     background: rgba(26, 26, 26, 0.95);
-    padding: 50px;
+    padding: 35px 50px;
     border-radius: 20px;
     box-shadow: var(--hover-box-shadow);
     width: 100%;
@@ -55,19 +55,22 @@ body::before {
 .register-box h2 {
     color: var(--main-text-color);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 28px;
     font-weight: 600;
 }
 
-.register-box h2 span {
+.academy-name {
     color: var(--primary-color);
+    font-size: 26px;
+    font-weight: bold;
 }
 
 .register-box form {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
 }
 
 .register-box input,
@@ -162,7 +165,6 @@ body::before {
 }
 
 .links {
-    margin-top: 25px;
     text-align: center;
     font-size: 14px;
 }

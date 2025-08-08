@@ -58,8 +58,15 @@ body::before {
     font-weight: 600;
 }
 
-.login-box h2 span {
+.academy-name {
     color: var(--primary-color);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.academy-name {
+    color: var(--primary-color);
+
 }
 
 .login-box form {
@@ -159,7 +166,7 @@ body::before {
 
 .login-box .links a {
     color: var(--primary-color);
-    margin: 0 10px;
+    margin-right: 5px;
     transition: var(--main-transition);
 }
 

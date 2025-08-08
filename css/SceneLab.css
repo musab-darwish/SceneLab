@@ -585,7 +585,7 @@ a {
     height: 100vh;
     background-color: var(--secondary-bg-color);
     z-index: 999;
-    padding: 50px 20px 20px;
+    padding: 20px 20px 20px;
     transition: left var(--main-transition);
     overflow-y: auto;
 }
@@ -745,7 +745,7 @@ a {
     }
 
     .mobile-nav {
-        padding: 70px 15px 20px;
+        padding: 20px 15px 20px;
     }
 }
 
@@ -962,7 +962,7 @@ a {
     height: 0;
     opacity: 0;
     background-color: var(--hover-color);
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
     z-index: 2;
 }
 
