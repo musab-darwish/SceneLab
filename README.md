@@ -91,10 +91,7 @@ The platform also follows a **mobile-first design approach**, ensuring full resp
 ---
 
 ## 🔗 Live Demo
-
-> *(Add the link once deployed to GitHub Pages or another platform)*  
-🔗 [Live Preview](#)
-
+(https://musab-darwish.github.io/SceneLab/)
 ---
 
 ## 🔄 Development Roadmap
