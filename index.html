@@ -31,9 +31,7 @@
                         <!-- Start Megamenu -->
                         <div class="mega-menu">
                             <div class="image">
-                                <img decoding="async"
-                                    src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=400&fit=crop"
-                                    alt="" loading="lazy">
+                                <img decoding="async" src="images/mega-menu.jpg" alt="" loading="lazy">
                             </div>
                             <ul class="links">
                                 <li>
@@ -148,9 +146,9 @@
             </div>
         </div>
 
-        <a href="#header" class="back-to-top">
+        <span href="" class="back-to-top">
             <i class="fas fa-chevron-up"></i>
-        </a>
+        </span>
         <!-- End Header -->
         <!-- Start Landing -->
         <div class="landing">
@@ -970,8 +968,18 @@
     </footer>
     <!-- End Footer -->
     <script>
+        let GoToTop = document.querySelector('.back-to-top');
+        window.onscroll = () => {
+            this.scrollY >= 1500 ? GoToTop.classList.add('show') : GoToTop.classList.remove('show');
+        };
+        GoToTop.onclick = () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        };
+
         // Simple toggle function for demonstration
-        // This can be replaced with CSS-only solution or enhanced JavaScript later
         function toggleMobileMenu() {
             const mobileNav = document.getElementById('mobileNav');
             mobileNav.classList.toggle('active');
