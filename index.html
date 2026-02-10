@@ -787,22 +787,22 @@
         <div class="container">
             <div class="box">
                 <i class="fas fa-video fa-4x"></i>
-                <h3 class="number">120+</h3>
+                <h3 class="number" data-goal="120">0</h3>
                 <span class="text">Courses</span>
             </div>
             <div class="box">
                 <i class="fas fa-chalkboard-teacher fa-4x"></i>
-                <h3 class="number">40+</h3>
+                <h3 class="number" data-goal="40">0</h3>
                 <span class="text">Expert Mentors</span>
             </div>
             <div class="box">
                 <i class="fas fa-users fa-4x"></i>
-                <h3 class="number">15K+</h3>
+                <h3 class="number" data-goal="500">0</h3>
                 <span class="text">Students</span>
             </div>
             <div class="box">
                 <i class="fas fa-globe fa-4x "></i>
-                <h3 class="number">60+</h3>
+                <h3 class="number" data-goal="60">0</h3>
                 <span class="text">Countries Reached</span>
             </div>
         </div>
@@ -1001,6 +1001,32 @@
                 mobileNav.classList.remove('active');
             }
         });
+
+        // Animate stats numbers
+        const statsNumbers = document.querySelectorAll('.stats .number');
+        const statsSection = document.getElementById('stats');
+        let statsStarted = false;
+
+
+        window.onscroll = function () {
+            if (window.scrollY >= statsSection.offsetTop - 400) {
+                if (!statsStarted) {
+                    statsNumbers.forEach((num) => startCount(num));
+                }
+                statsStarted = true;
+            }
+        };
+
+        function startCount(el) {
+            let goal = el.dataset.goal;
+            let count = setInterval(() => {
+                el.textContent++;
+                if (el.textContent == goal) {
+                    clearInterval(count);
+                }
+            }, 2000 / goal);
+        }
+
     </script>
 </body>
 
